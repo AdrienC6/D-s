@@ -1,5 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+/*# sourceMappingURL=style.css.map */ 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap');
 
 body {
-    font-family: 'Lato', sans-serif;
+  text-align: center;
+  width: 100vw;
+  margin: 0;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  line-height: 100px;
+  padding : 20px 0;
+  background: skyblue;
+  vertical-align: center;
+}
+
+.rules {
+    background : lightblue;
+    padding : 20px 0;
+    height : 100px;
+    li {
+        margin : 15px auto;
+    }
+}
+
+#space-1 {
+    background : skyblue;
+    height : 500px;
+}
+
+#space-2 {
+    background : skyblue;
+}
+
+#space-actions {
+    background : lightblue;
+}
+
+.spaces {
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .total {
+        height : 100px;
+        width : 100px;
+        background: rgba(255,0,0,0.4);
+        border-radius: 100%;
+        border : 1px solid #fff;
+        box-shadow: 0 0 8px #4B4B4B;
+        margin-top : 10px;
+    }
+    .tour {
+        height : 100px;
+        width : 100px;
+        background: lightblue;
+        border-radius: 100%;
+        border : 1px solid #fff;
+        box-shadow: 0 0 8px #4B4B4B;
+        margin-top : 30px;
+    }
+    #de {
+        width : 90px;
+        height : 90px;
+        overflow: hidden;
+        border-radius: 15px;
+        margin-top : 15px;
+        border : 1px solid skyblue;
+    }
 }

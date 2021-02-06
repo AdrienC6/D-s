@@ -1,5 +1,86 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap");
 body {
+  text-align: center;
+  width: 100vw;
+  margin: 0;
+  color: #fff;
   font-family: 'Lato', sans-serif;
+}
+
+header {
+  line-height: 100px;
+  padding: 20px 0;
+  background: skyblue;
+  vertical-align: center;
+}
+
+.rules {
+  background: lightblue;
+  padding: 20px 0;
+  height: 100px;
+}
+
+.rules li {
+  margin: 15px auto;
+}
+
+#space-1 {
+  background: skyblue;
+  height: 500px;
+}
+
+#space-2 {
+  background: skyblue;
+}
+
+#space-actions {
+  background: lightblue;
+}
+
+.spaces {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.spaces .total {
+  height: 100px;
+  width: 100px;
+  background: rgba(255, 0, 0, 0.4);
+  border-radius: 100%;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 0 0 8px #4B4B4B;
+          box-shadow: 0 0 8px #4B4B4B;
+  margin-top: 10px;
+}
+
+.spaces .tour {
+  height: 100px;
+  width: 100px;
+  background: lightblue;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 0 0 8px #4B4B4B;
+          box-shadow: 0 0 8px #4B4B4B;
+  margin-top: 30px;
+}
+
+.spaces #de {
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-top: 15px;
+  border: 1px solid skyblue;
 }
 /*# sourceMappingURL=style.css.map */

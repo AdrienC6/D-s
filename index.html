@@ -6,10 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dés</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+    <header>
+        <h1>LET'S PLAY!</h1>
+    </header>
+
+    <!-- RULES -->
+    <div class="rules">
+        <h3>
+            <ion-button color="secondary" id="rules">Règles du jeu</ion-button>
+        </h3>
+    </div>
+    <!-- END RULES -->
+
+    <!-- GAMESPACE -->
+    <ion-grid>
+        <ion-row>
+            <ion-col size="12" size-sm id="space-1" class="spaces">
+                <h2>Joueur 1</h2>
+                <div class="total"></div>
+                <p>TOTAL</p>
+
+                <div class="tour"></div>
+                <p>TOUR</p>
+            </ion-col>
+            <ion-col size="12" size-sm id="space-actions" class="spaces">
+                <h2 id="active-player-tour"></h2>
+                <img src="../images/1.png" id="de"></img>
+            </ion-col>
+            <ion-col size="12" size-sm id="space-2" class="spaces">
+                <h2>Joueur 2</h2>
+                <div class="total"></div>
+                <p>TOTAL</p>
+
+                <div class="tour"></div>
+                <p>TOUR</p>
+            </ion-col>
+
+        </ion-row>
+    </ion-grid>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
