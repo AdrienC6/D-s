@@ -97,4 +97,31 @@ header {
   margin-top: 15px;
   border: 1px solid skyblue;
 }
+
+.spaces #de:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.spaces p#save {
+  font-size: 20px;
+  color: skyblue;
+  border: 1px solid lightblue;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 3px #4B4B4B;
+          box-shadow: 0 0 3px #4B4B4B;
+}
+
+.spaces p#save i {
+  color: skyblue;
+}
+
+.spaces p#save:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */

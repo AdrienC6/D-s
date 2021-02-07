@@ -77,5 +77,25 @@ header {
         border-radius: 15px;
         margin-top : 15px;
         border : 1px solid skyblue;
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.10);
+        }
+    }
+    p#save{
+        font-size : 20px;
+        color : skyblue;
+        border : 1px solid lightblue;
+        background : white;
+        padding: 10px;
+        border-radius : 10px;
+        box-shadow: 0 0 3px #4B4B4B;
+        i {
+            color : skyblue;
+        }
+        &:hover {
+            transform: scale(1.10);
+            cursor: pointer;
+        }
     }
 }

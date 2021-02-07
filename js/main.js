@@ -1,3 +1,4 @@
+const rules = document.getElementById('rules'); // Voir les règles
 const de = document.querySelector('#de'); // Jeu de dé
 const save = document.querySelector('#save'); // Sauvegarder les points
 const tour1 = document.querySelector('#tour1'); // Tour J1
@@ -11,10 +12,17 @@ var activePlayer = player1; // Joueur actif
 
 activePlayerTour.innerHTML = "C'est au tour du Joueur " + activePlayer.name;
 
+rules.addEventListener('click', () => {
+    alert('Règles du jeu : Cliquez sur le dé pour le lancer. Le résultat du dé est ajouté à votre Tour Score. Vous pouvez relancer le dé pour augmenter votre score, ou sauvegarder vos points dans votre Total. Attention, si vous obtenez un 1, vous perdez vos points et c\'est à l\'autre joueur de lancer le dé. Le premier joueur à atteindre un Total de 100 remporte la partie.');
+})
+
 de.addEventListener('click', () => {
     var randomNumber = Math.floor(Math.random() * (1 - 7) + 7);
     de.style.border = "none";
-
+    de.setAttribute('class', 'animate__animated animate__bounce');
+    setTimeout(() => {
+        de.removeAttribute('class', 'animate__animated animate__bounce');
+    }, 500);
     switch (randomNumber) {
         case 1:
             de.src = "../images/1.png";
@@ -57,12 +65,12 @@ save.addEventListener('click', () => {
 
     activePlayerTour.innerHTML = "C'est au tour du Joueur " + activePlayer.name;
 
-    if (parseInt(total1.innerHTML) >= 10) {
+    if (parseInt(total1.innerHTML) >= 100) {
         activePlayerTour.innerHTML = "Victoire du joueur " + player1.name;
         refresh()
     }
 
-    if (parseInt(total2.innerHTML) >= 10) {
+    if (parseInt(total2.innerHTML) >= 100) {
         activePlayerTour.innerHTML = "Victoire du joueur " + player2.name;
         refresh();
     }
