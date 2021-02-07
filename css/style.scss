@@ -99,3 +99,9 @@ header {
         }
     }
 }
+
+@media screen and (max-width : 576px){
+    header{
+        display: none;
+    }
+}

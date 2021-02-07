@@ -124,4 +124,10 @@ header {
           transform: scale(1.1);
   cursor: pointer;
 }
+
+@media screen and (max-width: 576px) {
+  header {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */

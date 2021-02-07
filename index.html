@@ -16,45 +16,48 @@
 
 <body>
 
-    <header>
-        <h1>LET'S PLAY!</h1>
-    </header>
+    <ion-content scroll="true">
 
-    <!-- RULES -->
-    <div class="rules">
-        <h3>
-            <ion-button color="secondary" id="rules">Règles du jeu</ion-button>
-        </h3>
-    </div>
-    <!-- END RULES -->
+        <header>
+            <h1>LET'S PLAY!</h1>
+        </header>
 
-    <!-- GAMESPACE -->
-    <ion-grid>
-        <ion-row>
-            <ion-col size="12" size-sm id="space-1" class="spaces">
-                <h2>Joueur 1</h2>
-                <div class="total" id="total1">0</div>
-                <p>TOTAL</p>
+        <!-- RULES -->
+        <div class="rules">
+            <h3>
+                <ion-button color="secondary" id="rules">Règles du jeu</ion-button>
+            </h3>
+        </div>
+        <!-- END RULES -->
 
-                <div class="tour" id="tour1">0</div>
-                <p>TOUR</p>
-            </ion-col>
-            <ion-col size="12" size-sm id="space-actions" class="spaces">
-                <h2 id="active-player-tour"></h2>
-                <img src="../images/1.png" id="de"></img>
-                <p id="save"><i class="fas fa-cart-arrow-down"></i> Sauvegarder mes points</p>
-            </ion-col>
-            <ion-col size="12" size-sm id="space-2" class="spaces">
-                <h2>Joueur 2</h2>
-                <div class="total" id="total2">0</div>
-                <p>TOTAL</p>
+        <!-- GAMESPACE -->
+        <ion-grid>
+            <ion-row>
+                <ion-col size="12" size-sm id="space-1" class="spaces">
+                    <h2>Joueur 1</h2>
+                    <div class="total" id="total1">0</div>
+                    <p>TOTAL</p>
 
-                <div class="tour" id="tour2">0</div>
-                <p>TOUR</p>
-            </ion-col>
+                    <div class="tour" id="tour1">0</div>
+                    <p>TOUR</p>
+                </ion-col>
+                <ion-col size="12" size-sm id="space-actions" class="spaces">
+                    <h2 id="active-player-tour"></h2>
+                    <img src="../images/1.png" id="de"></img>
+                    <p id="save"><i class="fas fa-cart-arrow-down"></i> Sauvegarder mes points</p>
+                </ion-col>
+                <ion-col size="12" size-sm id="space-2" class="spaces">
+                    <h2>Joueur 2</h2>
+                    <div class="total" id="total2">0</div>
+                    <p>TOTAL</p>
 
-        </ion-row>
-    </ion-grid>
+                    <div class="tour" id="tour2">0</div>
+                    <p>TOUR</p>
+                </ion-col>
+
+            </ion-row>
+        </ion-grid>
+    </ion-content>
 
     <script src="js/main.js"></script>
 </body>
