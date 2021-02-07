@@ -1,4 +1,5 @@
 const rules = document.getElementById('rules'); // Voir les règles
+const newGame = document.getElementById('new'); // Démarrer une nouvelle partie
 const de = document.querySelector('#de'); // Jeu de dé
 const save = document.querySelector('#save'); // Sauvegarder les points
 const tour1 = document.querySelector('#tour1'); // Tour J1
@@ -74,6 +75,10 @@ save.addEventListener('click', () => {
         activePlayerTour.innerHTML = "Victoire du joueur " + player2.name;
         refresh();
     }
+})
+
+newGame.addEventListener('click', () => {
+    clean();
 })
 
 function clean() {
